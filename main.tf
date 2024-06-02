@@ -26,6 +26,7 @@ resource "aws_security_group" "sg" {
   }
 
   tags = {
+    Name    = var.sg_name
     Project = var.project_name
     IaC     = "Terraform"
   }
